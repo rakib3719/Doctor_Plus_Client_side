@@ -11,8 +11,11 @@ const nav = <>
 <li><a>About Us</a></li>
 </>
 
+
     return (
-        <div className='bg-[#e0e0e7] '>
+       <div className=' bg-[#e0e0e7] '>
+
+<div className='bg-[#e0e0e7] w-[94%] mx-auto md:w-[90%] max-w-[1160px]'>
             <div className="navbar m ">
   <div className="navbar-start mt-4">
     <div className="dropdown">
@@ -53,6 +56,7 @@ const nav = <>
   </div>
 </div>
         </div>
+       </div>
     );
 };
 

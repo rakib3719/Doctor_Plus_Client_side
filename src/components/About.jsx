@@ -1,13 +1,17 @@
 import { MdArrowOutward } from "react-icons/md";
 import aboutImg from '../assets/image/Rectangle 24.png'
+import Heading from "./Heading";
 
 const About = () => {
     return (
-        <div className="py-16 ">
+        <div className="bg-[#fbfbfb]">
+            <div className="py-16 w-[94%] mx-auto md:w-[90%] max-w-[1160px] sm:p-8 rounded-lg">
             <div className="lg:flex gap-16 mt-28 items-center">
             <div className="aboutLeft flex-1 ">
-                <button className="btn btn-outline text-[#020043]"> Who We Are </button>
-                <h2 className="font-bold text-2xl my-4 text-[#020043]">We Help To Get <br /> Solutions</h2>
+              <Heading  buttonName={"Who We Aew"} heading={"We Help To Get Soultions"}>
+
+
+              </Heading>
                 <p className="text-[#4D4C7B] sm:w-[100%] lg:w-[470px]">
                     We are proud to be a trusted healthcare provider in our community, and we look forward to serving you and your family with excellence, integrity, and compassion. Your health is our priority, and we are here for you every step of the way. We believe in treating each patient with dignity, respect, and empathy, ensuring that they receive the attention and care they deserve.
                 </p>
@@ -23,6 +27,7 @@ const About = () => {
                     <p className="text-[#FFFFFFCC]">To provide high-quality healthcare services that are accessible, personalized, and patient-centered.</p>
                 </div>
             </div>
+        </div>
         </div>
         </div>
     );

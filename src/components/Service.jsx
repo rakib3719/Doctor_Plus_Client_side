@@ -1,7 +1,6 @@
 import { MdArrowOutward } from "react-icons/md";
-import image1 from '../assets/image/Rectangle 27-2.png'
-import image2 from '../assets/image/Rectangle 27-1.png'
-import image3 from '../assets/image/Rectangle 27.png'
+import Heading from "./Heading";
+
 
 
 const Service = () => {
@@ -24,14 +23,16 @@ const Service = () => {
       ];
       
     return (
-        <div className="mt-28">
+
+        <div  className="bg-[#fbfbfb] py-28">
+
+<div className="mt-28 sm:bg-[#FFFFF5] w-[94%] mx-auto md:w-[90%] max-w-[1160px] sm:p-8 rounded-3xl">
             <div  className="grid  lg:grid-cols-2 gap-8">
 
-            <div className=" ">
-                <button className="btn btn-outline text-[#020043]"> Who We Are </button>
-                <h2 className="font-bold text-2xl my-4 text-[#020043]">Empowering Health, <br />Enriching Lives </h2>
+            <div className="">
+                <Heading   buttonName={"Service"} heading={"Empowering Health, Enriching Lives"} ></Heading>
                 <p className="text-[#4D4C7B] sm:w-[100%] lg:w-[470px]">
-                    We are proud to be a trusted healthcare provider in our community, and we look forward to serving you and your family with excellence, integrity, and compassion. Your health is our priority, and we are here for you every step of the way. We believe in treating each patient with dignity, respect, and empathy, ensuring that they receive the attention and care they deserve.
+                We are committed to providing high-quality, compassionate care to every patient we serve. Whatever your healthcare needs may be, you can trust us to be your partner in health and wellness.
                 </p>
                 <button className="bg-[#FFC637] rounded-lg my-6 btn">
                 Appointment <MdArrowOutward className='text-xl' />
@@ -42,10 +43,10 @@ const Service = () => {
 
     data.map((data, idx)=> 
     
-    <div key={idx} className="relative">
+    <div key={idx} className="relative sm:flex justify-center">
 
 <img  src={data.image} alt="" className="w-[524px] rounded-3xl h-[394px]" />
-<div className="bg-[#02004399] absolute left-[20px] bottom-[20px] text-white py-4 px-2 rounded-2xl w-[320px] flex justify-between">
+<div className="bg-[#02004399] absolute w-[86%] left-2 sm:left-[100px]  md:left-[200px] lg:left-[40px] bottom-[20px] text-white py-4 px-2 rounded-2xl sm:w-[320px] flex justify-between">
 <div className="">
 <h1   className="font-bold text-2xl text-[#FFFFF5E6]">{data.title}</h1>
 <p   className="text-[#FFFFF5E6]">   {data.shortDescription} </p>
@@ -65,6 +66,9 @@ const Service = () => {
             
             </div>
         </div>
+        </div>
+
+       
     );
 };
 
