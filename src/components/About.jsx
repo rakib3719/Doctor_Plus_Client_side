@@ -1,32 +1,29 @@
 import { MdArrowOutward } from "react-icons/md";
-import aboutImg from '../'
-
+import aboutImg from '../assets/image/Rectangle 24.png'
 
 const About = () => {
     return (
-        <div className="md:flex mt-28">
-            <div className="aboutLeft flex-1">
-
-
-<button className="btn btn-outline text-[#020043]"> Who We Are  </button>
-<h2 className="font-bold text-2xl my-4 text-[#020043]" >We Help To Get <br /> Soultions</h2>
-
-<p className="text-[#4D4C7B]">We are proud to be a trusted healthcare provider in our community, and we look forward to serving you and your family with excellence, integrity, and compassion. Your health is our priority, and we are here for you every step of the way. We believe in treating each patient with dignity, respect, and empathy, ensuring that they receive the attention and care they deserve.</p>
-
-<button className="bg-[#FFC637] rounded-lg my-6 btn">Learn more <MdArrowOutward  className='text-xl'/></button>
-
+        <div className="py-16 ">
+            <div className="lg:flex gap-16 mt-28 items-center">
+            <div className="aboutLeft flex-1 ">
+                <button className="btn btn-outline text-[#020043]"> Who We Are </button>
+                <h2 className="font-bold text-2xl my-4 text-[#020043]">We Help To Get <br /> Solutions</h2>
+                <p className="text-[#4D4C7B] sm:w-[100%] lg:w-[470px]">
+                    We are proud to be a trusted healthcare provider in our community, and we look forward to serving you and your family with excellence, integrity, and compassion. Your health is our priority, and we are here for you every step of the way. We believe in treating each patient with dignity, respect, and empathy, ensuring that they receive the attention and care they deserve.
+                </p>
+                <button className="bg-[#FFC637] rounded-lg my-6 btn">
+                    Learn more <MdArrowOutward className='text-xl' />
+                </button>
             </div>
 
-
-
-
-
-
-            <div className="aboutRight flex-1">
-
-<img src="" alt="" />
-
+            <div className="aboutRight relative sm:flex lg:grid justify-center flex-1">
+                <img src={aboutImg} alt="About" className="w-full lg:w-[500px]"/>
+                <div className="bg-[#343268]  lg:w-[70%] text-white p-4 rounded-xl absolute  w-[96%] sm:w-[50%] bottom-[-90px] sm:bottom-[-50px] sm:-left-4 left-0 md:-left-8 lg:-left-16 -lg:bottom-6 lg:translate-x-0">
+                    <h1 className="font-bold text-2xl">Our mission is simple</h1>
+                    <p className="text-[#FFFFFFCC]">To provide high-quality healthcare services that are accessible, personalized, and patient-centered.</p>
+                </div>
             </div>
+        </div>
         </div>
     );
 };
