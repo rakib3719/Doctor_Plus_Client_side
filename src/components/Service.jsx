@@ -25,7 +25,7 @@ const Service = () => {
       
     return (
         <div className="mt-28">
-            <div  className="grid md:grid-cols-2 gap-8">
+            <div  className="grid  lg:grid-cols-2 gap-8">
 
             <div className=" ">
                 <button className="btn btn-outline text-[#020043]"> Who We Are </button>
@@ -42,12 +42,20 @@ const Service = () => {
 
     data.map((data, idx)=> 
     
-    <div key={idx}>
+    <div key={idx} className="relative">
 
-<img src={data.image} alt="" />
-<div className="bg-[#020043]">
-<h1>{data.title}</h1>
-<p>   {data.shortDescription} </p>
+<img  src={data.image} alt="" className="w-[524px] rounded-3xl h-[394px]" />
+<div className="bg-[#02004399] absolute left-[20px] bottom-[20px] text-white py-4 px-2 rounded-2xl w-[320px] flex justify-between">
+<div className="">
+<h1   className="font-bold text-2xl text-[#FFFFF5E6]">{data.title}</h1>
+<p   className="text-[#FFFFF5E6]">   {data.shortDescription} </p>
+</div>
+
+<div className="flex justify-end items-end w-[48px]">
+<MdArrowOutward  className='text-[48px] bg-[#FFC637] p-4 rounded-full'/>
+
+
+</div>
 
 </div>
 
