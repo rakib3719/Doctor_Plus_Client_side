@@ -1,5 +1,7 @@
 import React from 'react';
 import Heading from "./Heading";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Testimonial = () => {
     const comments = [
@@ -32,7 +34,7 @@ const Testimonial = () => {
                 <Heading buttonName={"Testimonial"} heading={"What they say about us"} />
                 <div className="grid md:grid-cols-3 gap-8 mt-8">
                     {comments.map((data, idx) => (
-                        <div key={idx} className="card bg-base-100 rounded-lg">
+                        <div key={idx} className="card bg-base-100 rounded-lg shadow-md">
                             <div className="card-body p-6">
                                 <h2 className="card-title text-xl font-semibold">{data.heading}</h2>
                                 <p className="my-3 text-[#4D4C7B]">{data.comment}</p>
@@ -43,12 +45,10 @@ const Testimonial = () => {
                                             <span className="font-bold">{data.userName},</span>
                                             <span> {data.userProfession}</span>
                                         </p>
-                                        <div className="rating flex">
-                                            <span className="mask mask-star-2 bg-[#FFC637]" />
-                                            <span className="mask mask-star-2 bg-[#FFC637]" />
-                                            <span className="mask mask-star-2 bg-[#FFC637]" />
-                                            <span className="mask mask-star-2 bg-[#FFC637]" />
-                                            <span className="mask mask-star-2 bg-[#FFC637]" />
+                                        <div className="rating flex mt-1">
+                                            {[...Array(5)].map((_, i) => (
+                                                <FontAwesomeIcon key={i} icon={faStar} className="text-[#FFC637] mr-1" />
+                                            ))}
                                         </div>
                                     </div>
                                 </div>

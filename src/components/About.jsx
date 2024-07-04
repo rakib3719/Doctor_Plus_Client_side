@@ -8,7 +8,7 @@ const About = () => {
             <div className="py-16 w-[94%] mx-auto md:w-[90%] max-w-[1160px] sm:p-8 rounded-lg">
             <div className="lg:flex gap-16 mt-28 items-center">
             <div className="aboutLeft flex-1 ">
-              <Heading  buttonName={"Who We Aew"} heading={"We Help To Get Soultions"}>
+              <Heading  buttonName={"Who We Are"} heading={"We Help To Get "}  heading2={"Soultions"} >
 
 
               </Heading>
@@ -22,7 +22,7 @@ const About = () => {
 
             <div className="aboutRight relative sm:flex lg:grid justify-center flex-1">
                 <img src={aboutImg} alt="About" className="w-full lg:w-[500px]"/>
-                <div className="bg-[#343268]  lg:w-[70%] text-white p-4 rounded-xl absolute  w-[96%] sm:w-[50%] bottom-[-90px] sm:bottom-[-50px] sm:-left-4 left-0 md:-left-8 lg:-left-16 -lg:bottom-6 lg:translate-x-0">
+                <div className="bg-[#343268]  lg:w-[70%] text-white p-4 rounded-3xl absolute  w-[96%] sm:w-[50%] bottom-[-90px] sm:bottom-[-50px] sm:-left-4 left-0 md:-left-8 lg:-left-16 -lg:bottom-6 lg:translate-x-0">
                     <h1 className="font-bold text-2xl">Our mission is simple</h1>
                     <p className="text-[#FFFFFFCC]">To provide high-quality healthcare services that are accessible, personalized, and patient-centered.</p>
                 </div>

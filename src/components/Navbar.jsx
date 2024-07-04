@@ -42,7 +42,7 @@ const nav = <>
     </div>
     <a className="btn btn-ghost text-xl">
 
-<img src={logo} alt="" />
+<img src={logo} alt="" className='w-[60px] sm:w-auto'/>
 
     </a>
   </div>

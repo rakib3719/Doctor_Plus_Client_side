@@ -24,17 +24,17 @@ const Service = () => {
       
     return (
 
-        <div  className="bg-[#fbfbfb] py-28">
+        <div  className="bg-[#fbfbfb] pt-44">
 
-<div className="mt-28 sm:bg-[#FFFFF5] w-[94%] mx-auto md:w-[90%] max-w-[1160px] sm:p-8 rounded-3xl">
+<div className=" sm:bg-[#FFFFF5] w-[94%] mx-auto md:w-[90%] max-w-[1160px] sm:p-12 rounded-[32px]">
             <div  className="grid  lg:grid-cols-2 gap-8">
 
             <div className="">
-                <Heading   buttonName={"Service"} heading={"Empowering Health, Enriching Lives"} ></Heading>
+                <Heading   buttonName={"Service"} heading={"Empowering Health, "} heading2={"Enriching Lives"} ></Heading>
                 <p className="text-[#4D4C7B] sm:w-[100%] lg:w-[470px]">
                 We are committed to providing high-quality, compassionate care to every patient we serve. Whatever your healthcare needs may be, you can trust us to be your partner in health and wellness.
                 </p>
-                <button className="bg-[#FFC637] rounded-lg my-6 btn">
+                <button className="bg-[#FFC637] border-none rounded-lg my-6 btn">
                 Appointment <MdArrowOutward className='text-xl' />
                 </button>
             </div>
@@ -53,7 +53,7 @@ const Service = () => {
 </div>
 
 <div className="flex justify-end items-end w-[48px]">
-<MdArrowOutward  className='text-[48px] bg-[#FFC637] p-4 rounded-full'/>
+<MdArrowOutward  className='text-[48px] bg-[#FFC637] p-4 rounded-full '/>
 
 
 </div>

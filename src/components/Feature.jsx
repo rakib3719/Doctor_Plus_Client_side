@@ -2,20 +2,23 @@ import contract from '../assets/image/contract (1) 1.png'
 import coin from '../assets/image/Group (1).png'
 import chart from '../assets/image/Group 12 (1).png'
 import video from '../assets/image/Group (3).png'
+import { FaStar } from 'react-icons/fa'
+import users from '../assets/image/Group 7.png'
 
 const Feature = () => {
     return (
-        <div className="bg-[#fbfbfb] pt-28">
-            <div className=" w-[94%] mx-auto items-end gap-6  grid lg:grid-cols-5 md:w-[90%]   max-w-[1160px]">
+        <div className="bg-[#fbfbfb] pt-4 md:pt-8">
+            <h1  className="font-bold text-3xl text-center  lg:hidden pb-4">   Comprehensive Care <br /> for Every Patient</h1>
+            <div className=" w-[94%] mx-auto items-end gap-6  grid lg:grid-cols-5 md:w-[90%] justify-center  max-w-[1160px]">
+          
+<div className='mx-auto flex justify-center '>
 
-<div >
-<h1  className="font-bold text-3xl text-center lg:hidden pb-4">   Comprehensive Care <br /> for Every Patient</h1>
-<div className='flex lg:flex-col gap-4 '>
-<div className="card flex-1 border bg-white h-[312px]">
+<div className='sm:flex  lg:flex-col gap-4 mx-auto'>
+<div className="card flex-1 mb-8 sm:mb-0  border bg-white  h-[312px]">
   <div className="card-body">
     <h2 className="card-title"> 90%</h2>
     <p>Patient satisfaction rate, reflecting our commitment.</p>
-    <div className="">
+    <div className="mt-4 ml-8">
      <img src={chart} alt="" className='w-[100px]'/>
     </div>
   </div>
@@ -51,8 +54,10 @@ const Feature = () => {
 
 <div className="card border bg-white h-[190px]">
   <div className="card-body">
-    <h2 className="card-title"> 4.8</h2>
+    <h2 className="card-title flex items-center"> 4.8   <FaStar className='text-[#FFE03D] text-3xl'></FaStar> </h2>
+
     <p>Over 20,000 Patient</p>
+    <img src={users} alt="" />
     
   </div>
 </div>
@@ -73,11 +78,11 @@ const Feature = () => {
 
 <div>
 
-<div className="card border bg-white h-[312px] hidden lg:block">
+<div className="card border bg-white h-[290px] hidden lg:block">
   <div className="card-body">
     <h2 className="card-title"> 50+</h2>
-    <p>Free lession video for patient</p>
-    <div className="">
+    <p className=''>Free lession video for patient</p>
+    <div className="mt-8 ">
      <img src={video} alt="" className='w-[100px]'/>
     </div>
   </div>
